@@ -1,0 +1,6 @@
+local verifyx = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/UI-Librarys/main/VerifyX%20UI%20Lib"))()
+local vwindow = verifyx.new("Loading...", 0.1) --creates a new window
+wait(2)
+vwindow:Update("loading (nah jk)", 0.2) -- updates status
+wait(2)
+vwindow:Complete() -- completes it
