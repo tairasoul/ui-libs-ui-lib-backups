@@ -1,0 +1,36 @@
+local athenic = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/athenic_gui_library.lua"))()
+local window = athenic:CreateWindow("Window", themeTable)
+local tab = window:CreateTab("gamer")
+tab:Button("gamer button", function()
+    print("bruh")
+end)
+tab:Toggle("gamer toggle", function(value)
+    print(value)
+end)
+local gamertoggle = tab:Toggle("gamer toggle 2", function(value)
+    print(value)
+end)
+gamertoggle:SetToggle(true)
+tab:TextBox("haha box", function(text)
+    print(text)
+end)
+tab:Label("bruh")
+local bruhlabel = tab:Label("bruh")
+wait(1)
+bruhlabel:ChangeText("no more bruh")
+tab:Slider("Walkspeed", 120, function(value)
+    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+local dropdowntable = {
+    [1] = "bruh",
+    [2] = "no bruh"
+}
+tab:Dropdown("A dropdown", dropdowntable, function(selected)
+    print(selected)
+end,    false)
+tab:Keybind("HideKeybind",Enum.KeyCode.RightShift, function()
+    game:GetService("CoreGui").UILibrary.Enabled = not game:GetService("CoreGui").UILibrary.Enabled
+end)
+tab:ColorWheel("A Color Wheel", function(value)
+    print(value)
+end)
