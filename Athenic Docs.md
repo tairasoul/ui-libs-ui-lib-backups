@@ -26,7 +26,7 @@ local Window = Athenic:CreateWindow("Name", Theme) -- Theme is a table
 ```
 ## Creating a Tab
 ```lua
-local Tab = Window:CreateTab("TabName", nil) -- Second arg is an image asset.
+local Tab = Window:CreateTab("TabName") -- Second arg is an image asset.
 ```
 ## Adding a button
 ```lua
