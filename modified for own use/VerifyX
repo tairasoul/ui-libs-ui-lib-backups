@@ -178,7 +178,7 @@ function VerifyX.new(Status, Percentage)
 		
 		TweenService:Create(Window.Title, TweenInfo.new(0.25), {TextColor3 = Color3.new(0, 1, 0)}):Play()
 		
-		Window.StatusImage.Image = "rbxassetid://4335489513"
+		Window.StatusImage.Image = "rbxassetid://4384403532"
 		TweenService:Create(Window.StatusImage, TweenInfo.new(0.25), {ImageColor3 = Color3.new(0, 1, 0)}):Play()
 
 		TweenService:Create(Window.StatusText, TweenInfo.new(0.25), {TextColor3 = Color3.new(0, 1, 0)}):Play()
@@ -186,7 +186,7 @@ function VerifyX.new(Status, Percentage)
 		Window.Spinner.Rotation = 0
 		Window:Spin(false)
 		TweenService:Create(Window.Spinner, TweenInfo.new(0.25), {ImageColor3 = Color3.new(0, 1, 0)}):Play()
-		Window.Spinner.Image = "rbxassetid://4384403532"
+		Window.Spinner.Image = "rbxassetid://4335489513"
 		
 		Window:Update("Loading hub.", 1)
 		
