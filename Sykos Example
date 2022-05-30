@@ -1,6 +1,6 @@
 local SykosUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/UI-Librarys/main/Sykos"))()
 local SykosGUI = SykosUI:CreateGui("Replace this.")
-local SykosTab = SykosGUI:CreateTab("Replace this too.")
+local SykosTab = SykosUI:CreateTab("Replace this too.")
 SykosTab:Header("Placeholder.")
 SykosTab:Button("A button.", function()
     print("Button pressed.")
