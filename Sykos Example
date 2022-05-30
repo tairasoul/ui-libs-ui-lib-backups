@@ -1,0 +1,28 @@
+local SykosUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/UI-Librarys/main/Sykos"))()
+local SykosGUI = SykosUI:CreateGui("Replace this.")
+local SykosTab = SykosGUI:CreateTab("Replace this too.")
+SykosTab:Header("Placeholder.")
+SykosTab:Button("A button.", function()
+    print("Button pressed.")
+end)
+Tab:Toggle("A toggle.", function(value)
+    print(value)
+end)
+local toggleset_test = Tab:Toggle("ToggleSet Testing", function(value)
+    print(value)
+end)
+toggleset_test:Set(true)
+SykosTab:Box("A box.", false, function(text) --Set false to true if you want it to only accept numbers.
+    print(text)
+end)
+local BoxTest = SykosTab:Box("Box:Set Testing", false, function(text) --Set false to true if you want it to only accept numbers.
+    print(text)
+end)
+BoxTest:Set("we do a bit of tomfoolery")
+SykosTab:Slider("A slider", 1, 120, function(value)
+  game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+local SliderTest = SykosTab:Slider("Slider Value Set Testing", 1, 120, function(value)
+  game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+SliderTest:Set(30)
