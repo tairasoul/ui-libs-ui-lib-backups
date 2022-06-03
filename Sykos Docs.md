@@ -5,11 +5,11 @@ local SykosGUI = SykosUI:CreateGui("A Gui.")
 ```
 ## Adding credit to the UI
 ```lua
-SykosGUI:AddCredit("Custom Credits")
+SykosUI:AddCredit("Custom Credits")
 ```
 ## Creating a tab
 ```lua
-local SykosTab = SykosGUI:CreateTab("A tab.")
+local SykosTab = SykosUI:CreateTab("A tab.")
 ```
 ## Creating a header
 ```lua
