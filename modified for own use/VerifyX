@@ -15,7 +15,7 @@ function VerifyX.new(Status, Percentage)
 	Window.ScreenGui = Instance.new("ScreenGui")
 
 	-- [ Properties ] --
-	Window.ScreenGui.Name = "Verification"
+	Window.ScreenGui.Name = "Executor Check"
 	Window.ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 	if RunService:IsStudio() then
 		Window.ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
