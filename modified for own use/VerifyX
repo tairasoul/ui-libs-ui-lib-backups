@@ -14,7 +14,7 @@ function VerifyX.new(Status, Percentage)
 	Window.ScreenGui = Instance.new("ScreenGui")
 
 	-- [ Properties ] --
-	Window.ScreenGui.Name = "Executor Check"
+	Window.ScreenGui.Name = "Verification"
 	Window.ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 	if RunService:IsStudio() then
 		Window.ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -46,7 +46,7 @@ function VerifyX.new(Status, Percentage)
 	Window.Title.Position = UDim2.new(0.5, 0, 0.125, 0)
 	Window.Title.Size = UDim2.new(0.75, 0, 0.15, 0)
 	Window.Title.Font = Enum.Font.SciFi
-	Window.Title.Text = "Verification"
+	Window.Title.Text = "Executor Check"
 	Window.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Window.Title.TextScaled = true
 
