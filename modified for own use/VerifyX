@@ -1,3 +1,4 @@
+if runintro == true then
 --made by : icuck
 
 -- // CONSTANTS \\ --
@@ -209,3 +210,4 @@ function VerifyX.new(Status, Percentage)
 end
 
 return VerifyX
+end
