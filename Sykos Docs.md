@@ -60,3 +60,15 @@ local SliderTest = SykosTab:Slider("A slider with a pre-set value.", 1, 120, fun
 end)
 SliderTest:Set(60)
 ```
+## Creating a basic hide keybind
+```lua
+game:GetService("UserInputService").InputBegan:connect(function(inputobject)
+    if inputobject.UserInputType == Enum.UserInputType.Keyboard then
+        if inputobject.KeyCode == Enum.KeyCode.RightShift then -- Get enum codes here: https://developer.roblox.com/en-us/api-reference/enum/KeyCode
+            if game:GetService("CoreGui").DevonteLib then -- Not the best method but it works well.
+                game:GetService("CoreGui").DevonteLib.Enabled = not game:GetService("CoreGui").DevonteLib.Enabled
+            end
+        end
+    end
+end)
+```
