@@ -1,8 +1,10 @@
 local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
 local Notify = AkaliNotif.Notify;
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local notifier = {}
 
 function notifier:Init()
+  local NotifLib = {}
   function NotifLib:Akali(titlestring, infostring, timetowait)
       Notify({
       Description = infostring;
