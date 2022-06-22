@@ -22,5 +22,5 @@ function NotifLib:Init()
     Time = duration or 5
   })
   end
-return NotifLib
 end
+return NotifLib
