@@ -1,5 +1,5 @@
 local athenic = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/athenic_gui_library.lua"))()
-local window = athenic:CreateWindow("Window", themeTable)
+local window = athenic:CreateWindow("oog", themeTable)
 local tab = window:CreateTab("gamer")
 tab:Button("gamer button", function()
     print("bruh")
