@@ -183,7 +183,6 @@ function library:CreateWindow(name)
             OptionSample.BackgroundTransparency = 1.000
             OptionSample.Position = UDim2.new(0, 0, -0.00328947371, 0)
             OptionSample.Size = UDim2.new(0, 400, 0, 25)
-            OptionSample.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
             SampleButton.Name = "SampleButton"
             SampleButton.Parent = OptionSample
