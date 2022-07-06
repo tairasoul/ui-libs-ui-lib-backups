@@ -1,4 +1,4 @@
--- ui made by ashton to learn
+-- ui made by ashton to learn, not useful as an actual ui lib but it's good for reference if you're trying to make your first ui lib
 
 local library = {}
 
