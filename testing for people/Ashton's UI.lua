@@ -146,20 +146,18 @@ function library:CreateWindow(name)
             SampleButton.Text = ""
             SampleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
             SampleButton.TextSize = 14.000
-            SampleButton.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
             SampleLabel.Name = "SampleLabel"
             SampleLabel.Parent = OptionSample
             SampleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             SampleLabel.BackgroundTransparency = 1.000
-            SampleLabel.Size = UDim2.new(0, 400, 0, 25)
+            SampleLabel.Size = UDim2.new(0, 375, 0, 22.5)
             SampleLabel.Font = Enum.Font.SourceSans
             SampleLabel.Text = text
             SampleLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
             SampleLabel.TextScaled = true
             SampleLabel.TextSize = 14.000
             SampleLabel.TextWrapped = true
-            SampleLabel.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
             borderStroke:Clone().Parent = SampleButton
             borderStroke:Clone().Parent = SampleLabel
