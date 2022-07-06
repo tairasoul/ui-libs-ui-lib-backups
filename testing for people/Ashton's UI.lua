@@ -133,7 +133,7 @@ function library:CreateWindow(name)
             local SampleButton = Instance.new("TextButton")
             local SampleLabel = Instance.new("TextLabel")
             --local borderStroke = Instance.new('UIStroke')
-            local textStroke = Instance.new('UIStroke')
+            --local textStroke = Instance.new('UIStroke')
             local UICorner_3 = Instance.new("UICorner")
             local UICorner_7 = Instance.new("UICorner")
     
