@@ -159,7 +159,7 @@ function library:CreateWindow(name)
             SampleLabel.Parent = OptionSample
             SampleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             SampleLabel.BackgroundTransparency = 1.000
-            SampleLabel.Size = UDim2.new(0, 375, 0, 22.5)
+            SampleLabel.Size = UDim2.new(0, 400, 0, 25)
             SampleLabel.Font = Enum.Font.SourceSans
             SampleLabel.Text = text
             SampleLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
