@@ -100,54 +100,6 @@ function library:CreateWindow(name)
     borderStroke:Clone().Parent = CloseButton
     textStroke:Clone().Parent = CloseButton
     textStroke:Clone().Parent = TopMainTitle
-
---[[
-    function ButtonLibrary:CreateButton(text)
-        local OptionSample = Instance.new("Frame")
-        local SampleButton = Instance.new("TextButton")
-        local SampleLabel = Instance.new("TextLabel")
-        local borderStroke = Instance.new('UIStroke')
-        local textStroke = Instance.new('UIStroke')
-        local UICorner_3 = Instance.new("UICorner")
-
-        OptionSample.Name = "OptionSample"
-        OptionSample.Parent = ContainerSample
-        OptionSample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        OptionSample.BackgroundTransparency = 1.000
-        OptionSample.Position = UDim2.new(0, 0, -0.00328947371, 0)
-        OptionSample.Size = UDim2.new(0, 400, 0, 25)
-
-        SampleButton.Name = "SampleButton"
-        SampleButton.Parent = OptionSample
-        SampleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        SampleButton.BackgroundTransparency = 1.000
-        SampleButton.Position = UDim2.new(0.9375, 0, 0, 0)
-        SampleButton.Size = UDim2.new(0, 25, 0, 25)
-        SampleButton.Font = Enum.Font.SourceSans
-        SampleButton.Text = ""
-        SampleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-        SampleButton.TextSize = 14.000
-
-        SampleLabel.Name = "SampleLabel"
-        SampleLabel.Parent = OptionSample
-        SampleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        SampleLabel.BackgroundTransparency = 1.000
-        SampleLabel.Size = UDim2.new(0, 400, 0, 25)
-        SampleLabel.Font = Enum.Font.SourceSans
-        SampleLabel.Text = text
-        SampleLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-        SampleLabel.TextScaled = true
-        SampleLabel.TextSize = 14.000
-        SampleLabel.TextWrapped = true
-
-        borderStroke:Clone().Parent = SampleButton
-        borderStroke:Clone().Parent = SampleLabel
-        textStroke:Clone().Parent = SampleLabel
-        UICorner_3.CornerRadius = UDim.new(0, 9)
-        UICorner_3.Parent = SampleButton
-        return ButtonLibrary
-    end
-]]
     print('window')
 
     local WindowLibrary = {}
