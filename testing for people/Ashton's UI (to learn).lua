@@ -183,7 +183,7 @@ function library:CreateWindow(name)
             OptionSample.BackgroundTransparency = 1.000
             OptionSample.Position = UDim2.new(0, 0, -0.00328947371, 0)
             OptionSample.Size = UDim2.new(0, 400, 0, 25)
-            OptionSample.ZIndexBehavior = 2
+            OptionSample.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
             SampleButton.Name = "SampleButton"
             SampleButton.Parent = OptionSample
@@ -195,7 +195,7 @@ function library:CreateWindow(name)
             SampleButton.Text = ""
             SampleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
             SampleButton.TextSize = 14.000
-            SampleButton.ZIndexBehavior = 2
+            SampleButton.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
             SampleLabel.Name = "SampleLabel"
             SampleLabel.Parent = OptionSample
@@ -208,6 +208,7 @@ function library:CreateWindow(name)
             SampleLabel.TextScaled = true
             SampleLabel.TextSize = 14.000
             SampleLabel.TextWrapped = true
+            SampleLabel.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
             borderStroke:Clone().Parent = SampleButton
             borderStroke:Clone().Parent = SampleLabel
