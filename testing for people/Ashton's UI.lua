@@ -172,8 +172,8 @@ function library:CreateWindow(name)
             textStroke:Clone().Parent = SampleLabel
             UICorner_3.CornerRadius = UDim.new(0, 9)
             UICorner_3.Parent = SampleButton
-            UICorner_7.CornerRadius = UDim.new(0, 10)
-            UICorner_7.Parent = SampleLabel
+            --UICorner_7.CornerRadius = UDim.new(0, 10)
+            --UICorner_7.Parent = SampleLabel
         end
         return ButtonLibrary
     end
