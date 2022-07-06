@@ -101,9 +101,6 @@ function library:CreateWindow(name)
     textStroke:Clone().Parent = CloseButton
     textStroke:Clone().Parent = TopMainTitle
 
-
-
-    local ButtonLibrary = {}
 --[[
     function ButtonLibrary:CreateButton(text)
         local OptionSample = Instance.new("Frame")
@@ -171,6 +168,7 @@ function library:CreateWindow(name)
         SampleWindowButton.TextWrapped = true
         textStroke:Clone().Parent = SampleWindowButton
         borderStroke:Clone().Parent = SampleWindowButton
+        local ButtonLibrary = {}
         function ButtonLibrary:CreateButton(text)
             local OptionSample = Instance.new("Frame")
             local SampleButton = Instance.new("TextButton")
@@ -214,9 +212,9 @@ function library:CreateWindow(name)
             textStroke:Clone().Parent = SampleLabel
             UICorner_3.CornerRadius = UDim.new(0, 9)
             UICorner_3.Parent = SampleButton
-            return ButtonLibrary
         end
-        return WindowLibrary
+        return ButtonLibrary
     end
+    return WindowLibrary
 end
 return library
