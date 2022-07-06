@@ -1,5 +1,12 @@
 -- ui made by ashton to learn, not useful as an actual ui lib but it's good for reference if you're trying to make your first ui lib
 
+do
+    local gui = game:GetService("CoreGui"):FindFirstChild("Design")
+    if gui then
+        gui:Destroy()
+    end
+end
+
 local library = {}
 
 -- library:CreateWindow('whywontwork')
@@ -27,7 +34,7 @@ function library:CreateWindow(name)
     textStroke.Color = Color3.fromRGB(255,0,0)
 
     Design.Name = "Design"
-    Design.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    Design.Parent = game:GetService("CoreGui")
     Design.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     TopMain.Name = "TopMain"
