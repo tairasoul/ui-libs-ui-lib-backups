@@ -132,7 +132,7 @@ function library:CreateWindow(name)
             local OptionSample = Instance.new("Frame")
             local SampleButton = Instance.new("TextButton")
             local SampleLabel = Instance.new("TextLabel")
-            local borderStroke = Instance.new('UIStroke')
+            --local borderStroke = Instance.new('UIStroke')
             local textStroke = Instance.new('UIStroke')
             local UICorner_3 = Instance.new("UICorner")
             local UICorner_7 = Instance.new("UICorner")
@@ -159,7 +159,7 @@ function library:CreateWindow(name)
             SampleLabel.Parent = OptionSample
             SampleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             SampleLabel.BackgroundTransparency = 1.000
-            SampleLabel.Size = UDim2.new(0, 400, 0, 25)
+            SampleLabel.Size = UDim2.new(0, 375, 0, 22.5)
             SampleLabel.Font = Enum.Font.SourceSans
             SampleLabel.Text = text
             SampleLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -172,7 +172,7 @@ function library:CreateWindow(name)
             textStroke:Clone().Parent = SampleLabel
             UICorner_3.CornerRadius = UDim.new(0, 9)
             UICorner_3.Parent = SampleButton
-            UICorner_7.CornerRadius = UDim.new(0, 9)
+            UICorner_7.CornerRadius = UDim.new(0, 10)
             UICorner_7.Parent = SampleLabel
         end
         return ButtonLibrary
