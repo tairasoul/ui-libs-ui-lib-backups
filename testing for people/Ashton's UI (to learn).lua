@@ -183,6 +183,7 @@ function library:CreateWindow(name)
             OptionSample.BackgroundTransparency = 1.000
             OptionSample.Position = UDim2.new(0, 0, -0.00328947371, 0)
             OptionSample.Size = UDim2.new(0, 400, 0, 25)
+            OptionSample.ZIndexBehavior = 2
     
             SampleButton.Name = "SampleButton"
             SampleButton.Parent = OptionSample
@@ -194,6 +195,7 @@ function library:CreateWindow(name)
             SampleButton.Text = ""
             SampleButton.TextColor3 = Color3.fromRGB(0, 0, 0)
             SampleButton.TextSize = 14.000
+            SampleButton.ZIndexBehavior = 2
     
             SampleLabel.Name = "SampleLabel"
             SampleLabel.Parent = OptionSample
