@@ -9,8 +9,6 @@ end
        
 local library = {}
 
--- library:CreateWindow('whywontwork')
-
 function library:CreateWindow(name)
     local Design = Instance.new("ScreenGui")
     local TopMain = Instance.new("Frame")
@@ -107,7 +105,6 @@ function library:CreateWindow(name)
     borderStroke:Clone().Parent = CloseButton
     textStroke:Clone().Parent = CloseButton
     textStroke:Clone().Parent = TopMainTitle
-    print('window')
 
     local WindowLibrary = {}
     
