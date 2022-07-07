@@ -54,7 +54,7 @@ function lib:Notif(Title, Description, Time, Asset)
     headertext.Font = Enum.Font.SourceSans
     headertext.Text = Title
     headertext.TextColor3 = Color3.fromRGB(255, 255, 255)
-    headertext.TextSize = 14.000
+    headertext.TextSize = 16.000
     headertext.TextXAlignment = Enum.TextXAlignment.Left
 
     header.Name = "header"
