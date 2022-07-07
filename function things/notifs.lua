@@ -1,6 +1,7 @@
 local AkaliNotif = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/batusz/uilibrarys/main/AkaliNotifLib"))();
 local Notify = AkaliNotif.Notify;
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local CTLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/ui-libs-ui-lib-backups/main/function%20things/notif%20lib%20backups/CTNotif.lua"))()
 local notifier = {}
 
 function notifier:Init()
@@ -24,6 +25,9 @@ function notifier:Init()
     Time = duration or 5
   })
   end
+  function NotifLib:CTNotif(title, content, duration, image)
+     CTLib:Notif(title, content, duration, image)
+   end
   return NotifLib
 end
 return notifier
