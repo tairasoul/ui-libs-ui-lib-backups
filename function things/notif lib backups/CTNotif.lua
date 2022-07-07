@@ -89,9 +89,8 @@ function lib:Notif(Title, Description, Time, Asset)
     coroutine.wrap(function()
 		task.wait(Time)
 		local finishtween = Body:TweenPosition(UDim2.new(0.430021435, 0, 2, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 2.5, false)
-		finishtween.Completed:Connect(function()
-			Body:Remove()
-		end)
+		wait(2.7)
+		Body:Remove()
 	end)()
 end
 
