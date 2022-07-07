@@ -37,7 +37,7 @@ function lib:Notif(Title, Description, Time, Asset)
     Body.Name = "Body"
     Body.Parent = ScreenGui
     Body.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
-    Body.BackgroundTransparency = 0.700
+    Body.BackgroundTransparency = 0.400
     Body.BorderColor3 = Color3.fromRGB(130, 203, 255)
     Body.Position = UDim2.new(0.43, 0, 0.831971943, 0)
     Body.Size = UDim2.new(0, 268, 0, 124)
