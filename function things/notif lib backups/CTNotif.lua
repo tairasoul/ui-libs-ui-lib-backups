@@ -21,9 +21,7 @@ if getsynasset then
                 makefolder("synassets")
             end
             local file = string.split(path_or_url, "/")
-            local file1 = file[#file]
-            local file2 = string.split(file1, ".")
-            local filename = file2[1]
+            local filename = string.split(file[#file], ".")[1]
             if isfile("synassets\\" .. filename .. ".png") then
                 return old_synapse_asset("synassets\\" .. filename .. ".png")
             end
