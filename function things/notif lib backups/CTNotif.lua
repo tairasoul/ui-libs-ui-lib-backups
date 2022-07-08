@@ -13,13 +13,42 @@ do
     end
 end
 
+if getsynasset then
+    local old_synapse_asset = getsynasset
+    getgenv().getsynasset   = function(path_or_url)
+        if path_or_url:find("https://") or path_or_url:find("http://") then
+            if not isfolder("synassets") then
+                makefolder("synassets")
+            end
+            local file = string.split(path_or_url, "/")
+            local file1 = file[#file]
+            local file2 = string.split(file1, ".")
+            local filename = file2[1]
+            if isfile("synassets\\" .. filename .. ".png") then
+                return old_synapse_asset("synassets\\" .. filename .. ".png")
+            end
+            local synapse_request = game:HttpGet(path_or_url)
+            local image_base64_encode = syn.crypt.base64.encode(synapse_request)
+            writefile("synassets\\" .. filename .. ".png", syn.crypt.base64.decode(image_base64_encode))
+            return old_synapse_asset("synassets\\" .. filename .. ".png")
+        end
+        return old_synapse_asset(path_or_url)
+    end
+end
+
 local lib = {}
 
 function lib:Notif(Title, Description, Time, Asset)
     Title = Title or "Notification"
     Description = Description or "bruuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuh"
     Time = Time or 5
-    Asset = Asset or "rbxassetid://9818809996"
+    if (Asset:find("https://") or Asset:find("http://")) and getsynasset then
+        Asset = getsynasset(Asset)
+    elseif Asset:find("rbxasset") then
+        Asset = Asset
+    else
+        Asset = "rbxassetid://9818809996"
+    end
     local ScreenGui = Instance.new("ScreenGui")
     local Body = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
