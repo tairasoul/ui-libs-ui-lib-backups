@@ -1,0 +1,2 @@
+local notiflib = loadstring(game:HttpGet("https://raw.githubusercontent.com/fheahdythdr/ui-libs-ui-lib-backups/main/function%20things/notif%20lib%20backups/CTNotif.lua"))()
+notiflib:Notif("bruh", "eeeeeeeeeeeeeeeeeeee", 7.5, "https://raw.githubusercontent.com/fheahdythdr/random-shit-again/main/nigtroll.png") -- 4th argument is the assetid, you can only input links if your executor supports getsynasset.
