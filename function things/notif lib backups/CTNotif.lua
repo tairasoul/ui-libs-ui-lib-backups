@@ -39,7 +39,7 @@ function lib:Notif(Title, Description, Time, Asset)
     Body.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
     Body.BackgroundTransparency = 0.400
     Body.BorderColor3 = Color3.fromRGB(130, 203, 255)
-    Body.Position = UDim2.new(0.43, 0, 0.831971943, 0)
+    Body.Position = UDim2.new(0.430021435, 0, 1, 0)
     Body.Size = UDim2.new(0, 268, 0, 124)
 
     UICorner.Parent = Body
@@ -85,10 +85,12 @@ function lib:Notif(Title, Description, Time, Asset)
     TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel.TextSize = 22.000
     TextLabel.TextWrapped = true
+    
+    Body:TweenPosition(UDim2.new(0.43, 0, 0.831971943, 0), Enum.EasingDirection.In, Enum.EasingStyle.Sine, .4, false)
 
     coroutine.wrap(function()
 		task.wait(Time)
-		local finishtween = Body:TweenPosition(UDim2.new(0.430021435, 0, 2, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 2.5, false)
+		Body:TweenPosition(UDim2.new(0.430021435, 0, 2, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, 2.5, false)
 		wait(2.7)
 		Body:Remove()
 	end)()
