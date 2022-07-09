@@ -1,8 +1,3 @@
-local HttpService = game:GetService'HttpService'
-local plr = game:GetService'Players'.LocalPlayer
-local plrs = game:GetService'Players'
-local UIS = game:GetService('UserInputService')
-local RunService = game:GetService('RunService')
 local gs = game:GetService("CoreGui")
 local TweenService = game:GetService("TweenService")
 
