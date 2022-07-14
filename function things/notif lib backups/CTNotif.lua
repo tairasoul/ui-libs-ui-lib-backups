@@ -35,12 +35,14 @@ function lib:Notif(Title, Description, Time, Asset)
     Title = Title or "Notification"
     Description = Description or "bruuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuh"
     Time = Time or 5
-    if (Asset:find("https://") or Asset:find("http://")) and getsynasset then
-        Asset = getsynasset(Asset)
-    elseif Asset:find("rbxasset") then
-        Asset = Asset
-    else
-        Asset = "rbxassetid://9818809996"
+    if Asset then
+	    if (Asset:find("https://") or Asset:find("http://")) and getsynasset then
+		Asset = getsynasset(Asset)
+	    elseif Asset:find("rbxasset") then
+		Asset = Asset
+	    else
+		Asset = "rbxassetid://9818809996"
+	    end
     end
     local ScreenGui = Instance.new("ScreenGui")
     local Body = Instance.new("Frame")
