@@ -41,8 +41,9 @@ function lib:Notif(Title, Description, Time, Asset)
 	    elseif Asset:find("rbxasset") then
 		Asset = Asset
 	    end
-	 else
+    else
 	Asset = "rbxassetid://9818809996"
+    end
     local ScreenGui = Instance.new("ScreenGui")
     local Body = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
