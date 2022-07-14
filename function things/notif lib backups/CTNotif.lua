@@ -40,10 +40,9 @@ function lib:Notif(Title, Description, Time, Asset)
 		Asset = getsynasset(Asset)
 	    elseif Asset:find("rbxasset") then
 		Asset = Asset
-	    else
-		Asset = "rbxassetid://9818809996"
 	    end
-    end
+	 else
+	Asset = "rbxassetid://9818809996"
     local ScreenGui = Instance.new("ScreenGui")
     local Body = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
