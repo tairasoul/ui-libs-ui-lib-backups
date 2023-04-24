@@ -1,3 +1,3 @@
 # ui-libs-ui-lib-backups
-Hello! If you're the creator of one of these UI's and are wondering why it's here, it's because I'm looking for undocumented UI libs that might actually be good, and then making docs for them.
-Feel free to contact me on Discord (capybara#5226)
+i no longer work on these.
+these were originally docs for undocumented UI libs, but i've stopped working on roblox scripts.
