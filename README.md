@@ -1,3 +1,3 @@
 # ui-libs-ui-lib-backups
-i no longer work on these.
-these were originally docs for undocumented UI libs, but i've stopped working on roblox scripts.
+hi, these are docs and backups for undocumented ui libs.
+i still work on this semi-often, but i dont actively try to find any undocumented ui libs
